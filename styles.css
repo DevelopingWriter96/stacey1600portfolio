@@ -1,8 +1,60 @@
 html {
     font-family: roboto;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 75em) {
+    html {
+        font-size: 58%;
+    }
+}
+
+@media (max-width: 61.25em) {
+    html {
+        font-size: 55%;
+    }
 }
 
 body {
+    font-size: 1.8rem;
     align-items: center;
     text-align: center;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4.2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: green;
+}
+
+.nav a {
+    color: white;
 }

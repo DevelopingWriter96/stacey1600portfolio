@@ -58,3 +58,7 @@ a {
 .nav a {
     color: white;
 }
+
+.nav a:hover {
+    background: #00ff00;
+}

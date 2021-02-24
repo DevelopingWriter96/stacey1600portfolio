@@ -19,8 +19,8 @@ html {
 
 body {
     font-size: 1.8rem;
-    /*--align-items: center;
-    text-align: center;--*/
+    align-items: center;
+    text-align: center;
 }
 
 h1,
@@ -59,7 +59,7 @@ a {
 
 }
 
-.nav-list {
+.navigation {
     display: flex;
     margin-right: 2rem;
 }
@@ -80,12 +80,12 @@ a {
         justify-content: center;
     }
 
-    .nav-list {
+    .navigation {
         margin: 0 1 rem;
     }
 }
 
-.nav-list a {
+.navigation a {
     display: block;
     font-size: 2.2rem;
     padding: 2rem;
@@ -98,13 +98,16 @@ figure img {
 section {
     width: 100%;
     height: 100vh;
+    align-items: center;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 i {
     font-size: 5rem;
-}
-
-.welcome-section > p {
-    font-size: 3rem;
-    font-weight: 200;
 }

@@ -17,6 +17,16 @@ html {
     }
 }
 
+@media (max-width: 28.75em) {
+    .nav {
+        justify-content: center;
+    }
+
+    .navigation {
+        margin: 0 1 rem;
+    }
+}
+
 body {
     font-size: 1.8rem;
     align-items: center;
@@ -73,16 +83,6 @@ a {
 
 .nav a:hover {
     background: #00ff00;
-}
-
-@media (max-width: 28.75em) {
-    .nav {
-        justify-content: center;
-    }
-
-    .navigation {
-        margin: 0 1 rem;
-    }
 }
 
 .navigation a {

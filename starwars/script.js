@@ -14,7 +14,7 @@ console.log(force);
 function movieLoop (arr){
     for (let i = 0; i < arr.length; i++) {
         let myMovieTitle = document.createElement("h2");
-        myMovieTitle.textContent = arr.title;
+        myMovieTitle.textContent = arr[i].title;
 
         let mySpanTag1 = document.createElement("span");
         mySpanTag1.appendChild(myMovieTitle);
@@ -23,15 +23,5 @@ function movieLoop (arr){
     }
 }
 
-function runLoop (){
-if (document.query(".movie")) {
-    movieLoop(films);
-} else if (document.query(".ships")){
-    movieLoop(starships);
-} else {
-    console.log("Critical Error!");
-}
-}
-
-runLoop();
+movieLoop();
 

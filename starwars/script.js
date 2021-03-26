@@ -11,12 +11,12 @@ console.log(starships);
 
 console.log(force);
 
-function filmLoop {
+function filmLoop (){
     for (i = 0; i < films.length; i++) {
     }
 }
 
-function shipLoop {
+function shipLoop (){
     for (i = 0; i < films.length; i++) {
     }
 }

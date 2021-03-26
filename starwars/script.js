@@ -23,6 +23,8 @@ function movieLoop (){
     }
 }
 
+movieLoop();
+
 function shipLoop () {
     for (let j = 0; j < starships.length; j++) {
         let myShipTitle = document.createElement("h2");
@@ -37,4 +39,3 @@ function shipLoop () {
 
 shipLoop();
 
-movieLoop();

@@ -28,8 +28,10 @@ function filmLoop (arr){
 function runLoop(){
 if (document.querySelector(".movie")) {
     filmLoop(films);
-} else {
+} else if (document.querySelector(".starship")){
     filmLoop(starships);
+} else{
+    console.log("Critical Error!");
 }
 
 }

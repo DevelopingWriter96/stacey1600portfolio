@@ -13,6 +13,13 @@ console.log(force);
 
 function filmLoop (){
     for (i = 0; i < films.length; i++) {
+        let myMovieTitle = document.createElement("h2");
+        myMovieTitle.textContent = myList[i].title;
+
+        let mySpanTag1 = document.createElement("span");
+        mySpanTag1.appendChild(myMovieTitle);
+
+        document.getElementById('moviewrapper').appendChild(mySpanTag1);
     }
 }
 

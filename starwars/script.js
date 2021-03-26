@@ -27,9 +27,9 @@ function filmLoop (arr, att){
 
 function runLoop(){
 if (document.querySelector("#movie")) {
-    filmLoop(films, "title");
+    filmLoop(films, title);
 } else if (document.querySelector("#starship")){
-    filmLoop(starships, "model");
+    filmLoop(starships, model);
 } else{
     console.log("Critical Error!");
 }

@@ -29,7 +29,7 @@ function movieLoop (){
         let mySpanTag2 = document.createElement("span");
         mySpanTag2.appendChild(myShipTitle);
 
-        document.querySelector("#shipwrapper").appendChild(mySpanTag2);
+        document.querySelector(".shipwrapper").appendChild(mySpanTag2);
     } 
 }
 

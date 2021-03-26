@@ -12,7 +12,6 @@ console.log(starships);
 console.log(force);
 
 function movieLoop (){
-
     for (let i = 0; i < films.length; i++) {
         let myMovieTitle = document.createElement("h2");
         myMovieTitle.textContent = films[i].title;
@@ -32,7 +31,7 @@ function shipLoop() {
         let mySpanTag2 = document.createElement("span");
         mySpanTag2.appendChild(myShipTitle);
 
-        document.querySelector("#starshipwrapper").appendChild(mySpanTag1);
+        document.querySelector("#starshipwrapper").appendChild(mySpanTag2);
     }
 }
 

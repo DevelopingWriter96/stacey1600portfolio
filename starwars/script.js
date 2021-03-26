@@ -26,7 +26,7 @@ function filmLoop (arr){
 }
 
 function runLoop(){
-if (document.querySelector("#contentwrapper").className = "movie") {
+if (document.querySelector("#contentwrapper").className="movie") {
     filmLoop(films);
 } else {
     filmLoop(starships);

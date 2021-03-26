@@ -38,3 +38,5 @@ function shipLoop (){
 }
 
 filmLoop();
+
+shipLoop();

@@ -13,23 +13,30 @@ console.log(force);
 
 document
 
-function filmLoop (arr, att){
+function runLoop (){
+
+if (document.querySelector("#movie")) {
     for (let i = 0; i < arr.length; i++) {
         let myMovieTitle = document.createElement("h2");
-        myMovieTitle.textContent = arr[i].att;
+        myMovieTitle.textContent = films[i].title;
 
         let mySpanTag1 = document.createElement("span");
         mySpanTag1.appendChild(myMovieTitle);
 
         document.querySelector(".contentwrapper").appendChild(mySpanTag1);
     }
-}
 
-function runLoop(){
-if (document.querySelector("#movie")) {
-    filmLoop(films, title);
 } else if (document.querySelector("#starship")){
-    filmLoop(starships, model);
+    for (let i = 0; i < arr.length; i++) {
+        let myMovieTitle = document.createElement("h2");
+        myMovieTitle.textContent = starships[i].model;
+
+        let mySpanTag1 = document.createElement("span");
+        mySpanTag1.appendChild(myMovieTitle);
+
+        document.querySelector(".contentwrapper").appendChild(mySpanTag1);
+    }
+
 } else{
     console.log("Critical Error!");
 }

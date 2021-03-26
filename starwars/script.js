@@ -11,10 +11,10 @@ console.log(starships);
 
 console.log(force);
 
-function movieLoop (arr){
-    for (let i = 0; i < arr.length; i++) {
+function movieLoop (films){
+    for (let i = 0; i < films.length; i++) {
         let myMovieTitle = document.createElement("h2");
-        myMovieTitle.textContent = arr[i].title;
+        myMovieTitle.textContent = films[i].title;
 
         let mySpanTag1 = document.createElement("span");
         mySpanTag1.appendChild(myMovieTitle);

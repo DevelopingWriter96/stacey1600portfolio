@@ -25,9 +25,9 @@ function movieLoop (arr){
 
 function runLoop (){
 if (document.query(".movie")) {
-    movieLoop(films, title);
+    movieLoop(films);
 } else if (document.query(".ships")){
-    movieLoop(starships, model);
+    movieLoop(starships);
 } else {
     console.log("Critical Error!");
 }

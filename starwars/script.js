@@ -31,7 +31,7 @@ function shipLoop (){
         myShipName.textContent = starships[j].title;
 
         let mySpanTag2 = document.createElement("span");
-        mySpanTag1.appendChild(myMovieTitle);
+        mySpanTag1.appendChild(myShipName);
 
         document.querySelector('#starshipwrapper').appendChild(mySpanTag2);
     }

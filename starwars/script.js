@@ -21,20 +21,16 @@ function movieLoop (){
 
         document.querySelector("#moviewrapper").appendChild(mySpanTag1);
     }
-}
 
-function shipLoop() {
-    for (let i = 0; i < films.length; i++) {
-        let myMovieTitle = document.createElement("h2");
-        myMovieTitle.textContent = starships[i].model;
+    for (let j = 0; j < starships.length; j++) {
+        let myShipTitle = document.createElement("h2");
+        myShipTitle.textContent = starships[j].model;
 
-        let mySpanTag1 = document.createElement("span");
-        mySpanTag1.appendChild(myMovieTitle);
+        let mySpanTag2 = document.createElement("span");
+        mySpanTag2.appendChild(myShipTitle);
 
-        document.querySelector("#starship").appendChild(mySpanTag1);
+        document.querySelector("#starship").appendChild(mySpanTag2);
     } 
 }
 
 movieLoop();
-
-shipLoop();

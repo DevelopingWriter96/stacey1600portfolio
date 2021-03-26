@@ -21,7 +21,7 @@ function filmLoop (){
         let mySpanTag1 = document.createElement("span");
         mySpanTag1.appendChild(myMovieTitle);
 
-        document.querySelector('#moviewrapper').appendChild(mySpanTag1);
+        document.querySelector("#moviewrapper").appendChild(mySpanTag1);
     }
 }
 
@@ -33,7 +33,7 @@ function shipLoop (){
         let mySpanTag2 = document.createElement("span");
         mySpanTag1.appendChild(myShipName);
 
-        document.querySelector('#starshipwrapper').appendChild(mySpanTag2);
+        document.querySelector("#starshipwrapper").appendChild(mySpanTag2);
     }
 }
 

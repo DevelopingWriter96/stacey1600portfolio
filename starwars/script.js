@@ -11,7 +11,7 @@ console.log(starships);
 
 console.log(force);
 
-function movieLoop (films){
+function movieLoop (){
     for (let i = 0; i < films.length; i++) {
         let myMovieTitle = document.createElement("h2");
         myMovieTitle.textContent = films[i].title;

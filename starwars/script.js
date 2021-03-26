@@ -12,7 +12,7 @@ console.log(starships);
 console.log(force);
 
 function filmLoop (){
-    for (i = 0; i < films.length; i++) {
+    for (let i = 0; i < films.length; i++) {
         let myMovieTitle = document.createElement("h2");
         myMovieTitle.textContent = films[i].title;
 
@@ -24,8 +24,7 @@ function filmLoop (){
 }
 
 function shipLoop (){
-    let i;
-    for (i = 0; i < films.length; i++) {
+    for (let i = 0; i < films.length; i++) {
     }
 }
 

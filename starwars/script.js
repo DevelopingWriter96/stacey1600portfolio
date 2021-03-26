@@ -24,6 +24,7 @@ function filmLoop (){
 }
 
 function shipLoop (){
+    let i;
     for (i = 0; i < films.length; i++) {
     }
 }

@@ -11,10 +11,10 @@ console.log(starships);
 
 console.log(force);
 
-function movieLoop (){
-    for (let i = 0; i < films.length; i++) {
+function movieLoop (arr, method){
+    for (let i = 0; i < arr.length; i++) {
         let myMovieTitle = document.createElement("h2");
-        myMovieTitle.textContent = films[i].title;
+        myMovieTitle.textContent = arr.method;
 
         let mySpanTag1 = document.createElement("span");
         mySpanTag1.appendChild(myMovieTitle);
@@ -23,7 +23,13 @@ function movieLoop (){
     }
 }
 
-
-
-movieLoop();
+function runLoop (){
+if (document.query(".movie")) {
+    movieLoop(films, title);
+} else if (document.query(".ships")){
+    movieLoop(starships, model);
+} else {
+    console.log("Critical Error!");
+}
+}
 

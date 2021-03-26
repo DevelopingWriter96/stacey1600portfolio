@@ -11,34 +11,31 @@ console.log(starships);
 
 console.log(force);
 
-function runLoop (){
+function movieLoop (){
 
-if (document.querySelector("#movie")) {
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < films.length; i++) {
         let myMovieTitle = document.createElement("h2");
         myMovieTitle.textContent = films[i].title;
 
         let mySpanTag1 = document.createElement("span");
         mySpanTag1.appendChild(myMovieTitle);
 
-        document.querySelector(".contentwrapper").appendChild(mySpanTag1);
+        document.querySelector("#moviewrapper").appendChild(mySpanTag1);
     }
-
-} else if (document.querySelector("#starship")){
-    for (let i = 0; i < arr.length; i++) {
-        let myMovieTitle = document.createElement("h2");
-        myMovieTitle.textContent = starships[i].model;
-
-        let mySpanTag1 = document.createElement("span");
-        mySpanTag1.appendChild(myMovieTitle);
-
-        document.querySelector(".contentwrapper").appendChild(mySpanTag1);
-    }
-
-} else{
-    console.log("Critical Error!");
 }
 
+function shipLoop() {
+    for (let j = 0; j < starships.length; j++) {
+        let myShipTitle = document.createElement("h2");
+        myShipTitle.textContent = starships[j].model;
+
+        let mySpanTag2 = document.createElement("span");
+        mySpanTag2.appendChild(myShipTitle);
+
+        document.querySelector("#starshipwrapper").appendChild(mySpanTag1);
+    }
 }
 
-runLoop();
+movieLoop();
+
+shipLoop();

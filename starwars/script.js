@@ -14,7 +14,7 @@ console.log(force);
 function filmLoop (){
     for (i = 0; i < films.length; i++) {
         let myMovieTitle = document.createElement("h2");
-        myMovieTitle.textContent = myList[i].title;
+        myMovieTitle.textContent = films[i].title;
 
         let mySpanTag1 = document.createElement("span");
         mySpanTag1.appendChild(myMovieTitle);

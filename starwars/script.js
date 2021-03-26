@@ -13,10 +13,10 @@ console.log(force);
 
 document
 
-function filmLoop (arr){
+function filmLoop (arr, att){
     for (let i = 0; i < arr.length; i++) {
         let myMovieTitle = document.createElement("h2");
-        myMovieTitle.textContent = arr[i].title;
+        myMovieTitle.textContent = arr[i].att;
 
         let mySpanTag1 = document.createElement("span");
         mySpanTag1.appendChild(myMovieTitle);
@@ -27,9 +27,9 @@ function filmLoop (arr){
 
 function runLoop(){
 if (document.querySelector("#movie")) {
-    filmLoop(films);
+    filmLoop(films, title);
 } else if (document.querySelector("#starship")){
-    filmLoop(starships);
+    filmLoop(starships, shipname);
 } else{
     console.log("Critical Error!");
 }

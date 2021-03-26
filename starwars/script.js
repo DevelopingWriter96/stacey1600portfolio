@@ -27,3 +27,5 @@ function shipLoop (){
     for (i = 0; i < films.length; i++) {
     }
 }
+
+filmLoop();

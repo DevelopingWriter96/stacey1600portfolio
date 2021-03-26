@@ -1,6 +1,6 @@
 export const starships = [
     {
-        "shipname": "Executor",
+        "name": "Executor",
         "model": "Executor-class star dreadnought",
         "manufacturer": "Kuat Drive Yards, Fondor Shipyards",
         "cost_in_credits": "1143350000",

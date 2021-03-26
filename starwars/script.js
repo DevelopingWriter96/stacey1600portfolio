@@ -10,3 +10,13 @@ console.log(films);
 console.log(starships);
 
 console.log(force);
+
+function filmLoop {
+    for (i = 0; i < films.length; i++) {
+    }
+}
+
+function shipLoop {
+    for (i = 0; i < films.length; i++) {
+    }
+}

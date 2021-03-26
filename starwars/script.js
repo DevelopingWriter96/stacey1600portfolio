@@ -21,14 +21,14 @@ function filmLoop (arr){
         let mySpanTag1 = document.createElement("span");
         mySpanTag1.appendChild(myMovieTitle);
 
-        document.querySelector("#contentwrapper").appendChild(mySpanTag1);
+        document.querySelector(".contentwrapper").appendChild(mySpanTag1);
     }
 }
 
 function runLoop(){
-if (document.querySelector(".movie")) {
+if (document.querySelector("#movie")) {
     filmLoop(films);
-} else if (document.querySelector(".starship")){
+} else if (document.querySelector("#starship")){
     filmLoop(starships);
 } else{
     console.log("Critical Error!");

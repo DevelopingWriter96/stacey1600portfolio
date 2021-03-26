@@ -11,8 +11,6 @@ console.log(starships);
 
 console.log(force);
 
-document
-
 function runLoop (){
 
 if (document.querySelector("#movie")) {

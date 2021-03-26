@@ -31,7 +31,7 @@ function shipLoop() {
         let mySpanTag2 = document.createElement("span");
         mySpanTag2.appendChild(myShipTitle);
 
-        document.querySelector("#starshipwrapper").appendChild(mySpanTag2);
+        document.querySelector("#starship").appendChild(mySpanTag2);
     }
 }
 

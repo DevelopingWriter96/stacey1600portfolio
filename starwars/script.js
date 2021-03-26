@@ -33,3 +33,5 @@ if (document.query(".movie")) {
 }
 }
 
+runLoop();
+

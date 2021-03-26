@@ -26,14 +26,14 @@ function filmLoop (){
 }
 
 function shipLoop (){
-    for (let i = 0; i < films.length; i++) {
+    for (let j = 0; i < starships.length; j++) {
         let myShipName = document.createElement("h2");
-        myShipName.textContent = films[i].title;
+        myShipName.textContent = starships[j].title;
 
-        let mySpanTag1 = document.createElement("span");
+        let mySpanTag2 = document.createElement("span");
         mySpanTag1.appendChild(myMovieTitle);
 
-        document.getElementById('moviewrapper').appendChild(mySpanTag1);
+        document.querySelector('#starshipwrapper').appendChild(mySpanTag2);
     }
 }
 

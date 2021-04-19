@@ -1,1 +1,1 @@
-const pokeGrid = document.getElementById(pokeGrid);
+const pokeGrid = document.querySelector('.pokeGrid');

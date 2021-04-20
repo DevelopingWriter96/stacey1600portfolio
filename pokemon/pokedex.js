@@ -1,4 +1,9 @@
 const pokeGrid = document.querySelector('.pokeGrid')
+const loadPoke = document.querySelector('.loadPoke')
+
+loadPoke.addEventListener('click', () => {
+    loadPage()
+})
 
 async function getAPIData(url) {
     try {
@@ -10,9 +15,7 @@ async function getAPIData(url) {
     }
 }
 
-function loadPoke() {
-    const response = getAPIData('https://pokeapi.co/api/v2/pokemon/6');
-    console.log(response);
+function loadPage() {
+    const response = getAPIData('https://pokeapi.co/api/v2/pokemon/6')
+    console.log(response)
 }
-
-loadPoke();

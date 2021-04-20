@@ -21,5 +21,4 @@ function loadPage() {
             console.log(data)
         }
     )
-    console.log(response)
 }

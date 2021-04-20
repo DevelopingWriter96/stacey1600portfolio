@@ -9,3 +9,10 @@ async function getAPIData(url) {
         console.log(error)
     }
 }
+
+function loadPoke() {
+    const response = getAPIData('https://pokeapi.co/api/v2/pokemon/6');
+    console.log(response);
+}
+
+loadPoke();

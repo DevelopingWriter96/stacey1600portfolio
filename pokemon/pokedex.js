@@ -16,7 +16,7 @@ async function getAPIData(url) {
 }
 
 function loadPage() {
-    getAPIData('https://pokeapi.co/api/v2/pokemon/6').then(
+    getAPIData(`https://pokeapi.co/api/v2/pokemon/6`).then(
         (data) => {
             console.log(data)
         }

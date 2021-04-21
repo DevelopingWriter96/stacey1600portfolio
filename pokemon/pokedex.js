@@ -29,6 +29,14 @@ function loadPage() {
 
 function fillPokeCard(singlePokemon) {
     console.log(singlePokemon);
+    let pokeScene = document.createElement('div')
+    pokeScene.className = 'scene'
+    let pokeCard = document.createElement('div')
+    pokeCard.className = 'card'
+    //let pokeFront = document.createElement('div')
+    //pokeFront.className = "card__face card__face--front"
+    pokeScene.appendChild(pokeCard)
+    pokeGrid.appendChild(pokeScene)
 }
 
 //var card = document.querySelector('.card');

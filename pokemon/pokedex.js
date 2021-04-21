@@ -30,3 +30,8 @@ function loadPage() {
 function fillPokeCard(singlePokemon) {
     console.log(singlePokemon);
 }
+
+var card = document.querySelector('.card');
+card.addEventListener( 'click', function() {
+  card.classList.toggle('is-flipped');
+});

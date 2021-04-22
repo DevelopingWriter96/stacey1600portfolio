@@ -1,11 +1,6 @@
 const pokeGrid = document.querySelector('.pokeGrid')
 const loadPoke = document.querySelector('.loadPoke')
 
-let card = document.querySelector('.card');
-card.addEventListener( 'click', function() {
-  card.classList.toggle('is-flipped');
-});
-
 loadPoke.addEventListener('click', () => {
     loadPage()
 })

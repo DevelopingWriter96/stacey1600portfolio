@@ -44,7 +44,7 @@ function fillCardFront(pokemon) {
     let pokeFront= document.createElement('div')
     pokeFront.className = 'card__face card__face--front'
     let frontLabel= document.createElement('p')
-    frontLabel.textContent = pokemon.name
+    frontLabel.textContent = '# ' + ${getImageFileName(pokemon)} + pokemon.name 
     let frontImage= document.createElement('img')
     frontImage.src = `images/${getImageFileName(pokemon)}.png`
 

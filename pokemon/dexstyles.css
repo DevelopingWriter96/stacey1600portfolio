@@ -54,7 +54,7 @@ img {
   }
   
   .card__face--back {
-    background: blue;
+    background: red;
     transform: rotateY(180deg);
     border-radius: 15px;
   }

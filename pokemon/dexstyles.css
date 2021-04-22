@@ -11,6 +11,10 @@ body { font-family: sans-serif; }
     justify-content: space-between;
 }
 
+img {
+    max-width: 200px;
+}
+
 .scene {
     width: 200px;
     height: 260px;

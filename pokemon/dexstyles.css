@@ -16,7 +16,7 @@ body { font-family: sans-serif; }
     margin: 10px;
 }
 
-.card {
+/* .card {
   width: 100%;
   height: 100%;
   transition: transform 1s;

@@ -20,4 +20,7 @@ img {
     height: 260px;
     border: 1px solid #ccc;
     margin: 10px;
+    color: #fff;
+    background: #f00;
+    text-align: center;
 }

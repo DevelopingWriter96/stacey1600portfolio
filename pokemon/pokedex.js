@@ -36,6 +36,7 @@ function fillPokeCard(singlePokemon) {
     pokeCard.className = 'card'
     
     pokeCard.appendChild(fillCardFront(singlePokemon))
+    pokeCard.appendChild(fillCardBack(singlePokemon))
     pokeScene.appendChild(pokeCard)
     pokeGrid.appendChild(pokeScene)
 }
@@ -51,6 +52,15 @@ function fillCardFront(pokemon) {
     pokeFront.appendChild(frontLabel)
     pokeFront.appendChild(frontImage)
     return pokeFront
+}
+
+function fillCardBack(pokemon) {
+    let pokeBack = document.createElement('div')
+    pokeBack.className = 'card__face card__face--back'
+    let backLabel = document.createElement
+    backLabel.textContent = `Height: ${pokemon.height}`
+    pokeBack.appendChild(backLabel)
+    return pokeBack
 }
 
 function getImageFileName(pokemon) {

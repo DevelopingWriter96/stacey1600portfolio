@@ -24,6 +24,7 @@ img {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
+    border-radius: 15px;
 }
 
 .card {
@@ -50,9 +51,11 @@ img {
 
   .card__face--front {
     background: red;
+    border-radius: 15px;
   }
   
   .card__face--back {
     background: blue;
     transform: rotateY(180deg);
+    border-radius: 15px;
   }

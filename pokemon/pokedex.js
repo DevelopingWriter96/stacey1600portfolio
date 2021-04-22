@@ -37,6 +37,7 @@ function fillPokeCard(singlePokemon) {
     //pokeFront.className = "card__face card__face--front"
     pokeScene.appendChild(pokeCard)
     pokeGrid.appendChild(pokeScene)
+    pokeCard.appendChild(singlePokemon)
 }
 
 //var card = document.querySelector('.card');

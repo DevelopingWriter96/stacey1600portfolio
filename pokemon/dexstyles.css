@@ -38,10 +38,19 @@ img {
     transform: rotateY(180deg);
 }
 
-.card__face {
+/* .card__face {
     position: absolute;
     width: 100%;
     height: 100%;
     text-align: center;
     backface-visibility: hidden;
+  } */
+
+  .card__face--front {
+    background: red;
+  }
+  
+  .card__face--back {
+    background: blue;
+    transform: rotateY(180deg);
   }

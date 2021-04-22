@@ -19,6 +19,8 @@ button {
     background:red;
     padding: 10%;
     border-radius: 50%;
+    color: white;
+    border: none;
 }
 
 .scene {

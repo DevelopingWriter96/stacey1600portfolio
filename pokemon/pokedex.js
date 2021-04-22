@@ -34,7 +34,7 @@ function fillPokeCard(singlePokemon) {
     let pokeCard = document.createElement('div')
     pokeCard.className = 'card'
     
-    pokeCard.appendChild(populateCardFront(singlePokemon))
+    pokeCard.appendChild(fillCardFront(singlePokemon))
     pokeScene.appendChild(pokeCard)
     pokeGrid.appendChild(pokeScene)
 }

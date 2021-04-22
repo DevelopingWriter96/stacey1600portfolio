@@ -57,9 +57,12 @@ function fillCardFront(pokemon) {
 function fillCardBack(pokemon) {
     let pokeBack = document.createElement('div')
     pokeBack.className = 'card__face card__face--back'
-    let backLabel = document.createElement('p')
-    backLabel.textContent = `Height: ${pokemon.height}`
-    pokeBack.appendChild(backLabel)
+    let backLabel1 = document.createElement('p')
+    backLabel1.textContent = `Height: ${pokemon.height}`
+    pokeBack.appendChild(backLabel1)
+    let backLabel2 = document.createElement('p')
+    backLabel2.textContent = `Height: ${pokemon.weight}`
+    pokeBack.appendChild(backLabel2)
     return pokeBack
 }
 

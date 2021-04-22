@@ -46,9 +46,17 @@ function fillCardFront(pokemon) {
     let frontLabel= document.createElement('p')
     frontLabel.textContent = pokemon.name
     let frontImage= document.createElement('img')
-    frontImage.src = `images/00${pokemon.id}.png`
+    frontImage.src = `images/${getImageFileName}.png`
 
     pokeFront.appendChild(frontLabel)
     pokeFront.appendChild(frontImage)
     return pokeFront
+}
+
+function getImageFileName(pokemon) {
+    if (pokemon.id < 10) {
+        return `00${pokemon.id}`
+    } else if (pokemon.id > 9 && pokemon.id < 100){
+        return `0${pokemon.id}`
+    }
 }

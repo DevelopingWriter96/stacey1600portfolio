@@ -19,8 +19,9 @@ function loadPage() {
     getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=25`).then(
         (data) => {
             for (const singlePokemon of data.results) {
-
-                fillPokeCard(singlePokemon)
+                await getAPIData(singlePokemon.url).then {
+                    (pokeData) => fillPokeCard(pokeData)
+                }
 
             } 
         }
@@ -45,7 +46,7 @@ function fillCardFront(pokemon) {
     let frontLabel= document.createElement('p')
     frontLabel.textContent = pokemon.name
     let frontImage= document.createElement('img')
-    frontImage.src = 'images/006MS.png'
+    frontImage.src = `images/00${pokemon.id}.png`
 
     pokeFront.appendChild(frontLabel)
     pokeFront.appendChild(frontImage)

@@ -24,7 +24,6 @@ img {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    border-radius: 15px;
 }
 
 .card {
@@ -34,6 +33,7 @@ img {
     transform-style: preserve-3d;
     cursor: pointer;
     position: relative;
+    border-radius: 15px;
 }
 
 .card.is-flipped {

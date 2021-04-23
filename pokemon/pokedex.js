@@ -74,9 +74,13 @@ function fillCardFront(pokemon) {
     frontLabel.textContent = pokemon.name 
     let frontImage= document.createElement('img')
     frontImage.src = `images/${getImageFileName(pokemon)}.png`
-
     pokeFront.appendChild(frontLabel)
     pokeFront.appendChild(frontImage)
+    pokemon.types.forEach((pokeType) => {
+        let frontType = document.createElement('p')
+        frontType.textContent = pokeType.type.name
+        frontBack.appendChild(frontType)
+        })
     return pokeFront
 }
 

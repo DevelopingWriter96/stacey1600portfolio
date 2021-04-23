@@ -17,8 +17,8 @@ img {
 
 button {
     background:red;
-    padding: 0 5% 0 5%;
-    border-radius: 20%;
+    padding: 2.5% 5% 2.5% 5%;
+    border-radius: 30%;
     color: white;
     border: none;
 }

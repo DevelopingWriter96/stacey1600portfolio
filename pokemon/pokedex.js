@@ -4,6 +4,7 @@ const addButton = document.querySelector('#addPoke')
 
 class Pokemon {
     constructor(name, height, weight) {
+        this.id = 152;
         this.name = name;
       this.height = height;
       this.weight = weight;
@@ -101,11 +102,8 @@ function getImageFileName(pokemon) {
         return `00${pokemon.id}`
     } else if (pokemon.id > 9 && pokemon.id < 100){
         return `0${pokemon.id}`
-    } else if (pokemon.id =< 151{
+    } else if (pokemon.id === 152){
         return `${pokemon.id}`
-    } else {
-        return '151'
-    }
 }
 
 //function getType(pokemon) {

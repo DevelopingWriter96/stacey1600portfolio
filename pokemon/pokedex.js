@@ -5,7 +5,7 @@ const addButton = document.querySelector('#addPoke')
 class Pokemon {
     constructor(name, height, weight) {
         this.id = 152;
-        this.type.name = 'Normal';
+        this.types.type.name = 'Normal';
         this.name = name;
       this.height = height;
       this.weight = weight;

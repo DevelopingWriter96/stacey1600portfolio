@@ -83,3 +83,7 @@ function getImageFileName(pokemon) {
         return `${pokemon.id}`
     }
 }
+
+//function getType(pokemon) {
+
+//}

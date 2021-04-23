@@ -3,12 +3,12 @@ const loadPoke = document.querySelector('.loadPoke')
 const addButton = document.querySelector('#addPoke')
 
 class Pokemon {
-    constructor(name, height, weight) {
+    constructor(name, height, weight,types) {
         this.id = 152;
-        this.types.type.name = 'Normal';
         this.name = name;
       this.height = height;
       this.weight = weight;
+      this.types= types;
     }
   }
 
@@ -19,7 +19,12 @@ addButton.addEventListener('click', () => {
     let customPoke = new Pokemon(
         pokeName,
         pokeHeight,
-        pokeWeight
+        pokeWeight,
+        [{
+            type: {
+                name: "normal"
+            }
+        }]
     )
     fillPokeCard(customPoke)
     console.log(customPoke)

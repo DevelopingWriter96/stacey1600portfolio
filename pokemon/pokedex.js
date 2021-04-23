@@ -20,7 +20,7 @@ addButton.addEventListener('click', () => {
         pokeHeight,
         pokeWeight
     )
-
+    fillPokeCard(customPoke)
     console.log(customPoke)
 })  
 
@@ -102,10 +102,7 @@ function getImageFileName(pokemon) {
         return `00${pokemon.id}`
     } else if (pokemon.id > 9 && pokemon.id < 100){
         return `0${pokemon.id}`
-    } else if (pokemon.id === 152){
+    } else {
         return `${pokemon.id}`
+    }    
 }
-
-//function getType(pokemon) {
-
-//}

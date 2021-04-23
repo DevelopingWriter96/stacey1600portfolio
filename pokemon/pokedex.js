@@ -1,5 +1,27 @@
 const pokeGrid = document.querySelector('.pokeGrid')
 const loadPoke = document.querySelector('.loadPoke')
+const addButton = document.querySelector('#addPoke')
+
+class Pokemon {
+    constructor(name, height, weight) {
+        this.name = name;
+      this.height = height;
+      this.weight = weight;
+    }
+  }
+
+addButton.addEventListener('click', () => {
+    let pokeName = prompt('What is the name?')
+    let pokeHeight = prompt('How Tall is it?')
+    let pokeWeight = prompt('How Heavy is it?')
+    let customPoke = new Pokemon(
+        pokeName,
+        pokeHeight,
+        pokeWeight
+    )
+
+    console.log(customPoke)
+})  
 
 loadPoke.addEventListener('click', () => {
     loadPage()

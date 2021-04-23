@@ -79,7 +79,7 @@ function fillCardFront(pokemon) {
     pokemon.types.forEach((pokeType) => {
         let frontType = document.createElement('p')
         frontType.textContent = pokeType.type.name
-        frontBack.appendChild(frontType)
+        pokeFront.appendChild(frontType)
         })
     return pokeFront
 }

@@ -101,8 +101,10 @@ function getImageFileName(pokemon) {
         return `00${pokemon.id}`
     } else if (pokemon.id > 9 && pokemon.id < 100){
         return `0${pokemon.id}`
-    } else {
+    } else if (pokemon.id =< 151{
         return `${pokemon.id}`
+    } else {
+        return '151'
     }
 }
 

@@ -85,7 +85,7 @@ function fillCardBack(pokemon) {
     let nameLabel= document.createElement('p')
     nameLabel.textContent = `#${getImageFileName(pokemon)} ${pokemon.name}`
     pokeBack.appendChild(nameLabel) 
-    pokemon.types.foreach((pokeType) => {
+    pokemon.types.forEach((pokeType) => {
         console.log(pokeType.type.name)
     })
     let backType = document.createElement('p')

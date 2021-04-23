@@ -85,6 +85,9 @@ function fillCardBack(pokemon) {
     let nameLabel= document.createElement('p')
     nameLabel.textContent = `#${getImageFileName(pokemon)} ${pokemon.name}`
     pokeBack.appendChild(nameLabel) 
+    let backType = document.createElement('p')
+    backType.textContent = `Types: ${pokemon.types}`
+    pokeBack.appendChild(backType)
     let backSprite = document.createElement('img')
     backSprite.src = `images/${getImageFileName(pokemon)}MS.png`
     pokeBack.appendChild(backSprite)

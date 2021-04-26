@@ -25,8 +25,8 @@ function movieLoop (){
 
 function shipLoop () {
 let myShipTitle = document.createElement("h2");
-    for (let i = 0; i < starships.length; i++) {
-        myShipTitle.textContent = starships[i].model;
+    for (let j = 0; j < starships.length; j++) {
+        myShipTitle.textContent = starships[j].model;
 
         let mySpanTag2 = document.createElement("span");
         mySpanTag2.appendChild(myShipTitle);

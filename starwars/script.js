@@ -20,16 +20,21 @@ function movieLoop (){
         mySpanTag1.appendChild(myMovieTitle);
 
         document.querySelector("#moviewrapper").appendChild(mySpanTag1);
+    }
+}
 
-        let myShipTitle = document.createElement("h2");
+function shipLoop () {
+let myShipTitle = document.createElement("h2");
         myShipTitle.textContent = starships[i].model;
 
         let mySpanTag2 = document.createElement("span");
         mySpanTag2.appendChild(myShipTitle);
 
         document.querySelector("#ships").appendChild(mySpanTag2);
-    }
-}
+}        
 
 movieLoop();
+
+shipLoop();
+
 

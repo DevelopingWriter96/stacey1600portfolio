@@ -25,12 +25,14 @@ function movieLoop (){
 
 function shipLoop () {
 let myShipTitle = document.createElement("h2");
+    for (let i = 0; i < starships.length; i++) {
         myShipTitle.textContent = starships[i].model;
 
         let mySpanTag2 = document.createElement("span");
         mySpanTag2.appendChild(myShipTitle);
 
         document.querySelector("#ships").appendChild(mySpanTag2);
+    }    
 }        
 
 movieLoop();

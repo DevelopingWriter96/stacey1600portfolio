@@ -20,12 +20,8 @@ function movieLoop (){
         mySpanTag1.appendChild(myMovieTitle);
 
         document.querySelector("#moviewrapper").appendChild(mySpanTag1);
-    }
-}
 
-function shipLoop () {
-let myShipTitle = document.createElement("h2");
-    for (let j = 0; j < starships.length; j++) {
+        let myShipTitle = document.createElement("h2");
         myShipTitle.textContent = starships[j].model;
 
         let mySpanTag2 = document.createElement("span");
@@ -33,10 +29,4 @@ let myShipTitle = document.createElement("h2");
 
         document.querySelector("#ships").appendChild(mySpanTag2);
     }    
-}        
-
-movieLoop();
-
-shipLoop();
-
-
+}

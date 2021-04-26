@@ -30,3 +30,5 @@ function movieLoop (){
         document.querySelector("#ships").appendChild(mySpanTag2);
     }    
 }
+
+movieLoop();

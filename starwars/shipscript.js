@@ -11,16 +11,16 @@ console.log(starships);
 
 console.log(force);
 
-function movieLoop (){
-    for (let i = 0; i < films.length; i++) {
-        let myMovieTitle = document.createElement("h2");
-        myMovieTitle.textContent = films[i].title;
+function shipLoop (){
+    for (let j = 0; j < films.length; j++) {
+        let myShipTitle = document.createElement("h2");
+        myShipTitle.textContent = films[j].title;
 
-        let mySpanTag1 = document.createElement("span");
-        mySpanTag1.appendChild(myMovieTitle);
+        let mySpanTag2 = document.createElement("span");
+        mySpanTag2.appendChild(myShipTitle);
 
-        document.querySelector("#moviewrapper").appendChild(mySpanTag1);
+        document.querySelector("#ships").appendChild(mySpanTag2);
     }    
 }
 
-movieLoop();
+shipLoop();

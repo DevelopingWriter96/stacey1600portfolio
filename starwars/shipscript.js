@@ -14,7 +14,7 @@ console.log(force);
 function shipLoop (){
     for (let j = 0; j < starships.length; j++) {
         let myShipTitle = document.createElement("h2");
-        myShipTitle.textContent = shipships[j].name;
+        myShipTitle.textContent = starships[j].name;
 
         let mySpanTag2 = document.createElement("span");
         mySpanTag2.appendChild(myShipTitle);

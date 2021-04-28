@@ -28,7 +28,7 @@ movieLoop();
 function shipLoop (){
     for (let j = 0; j < films.length; j++) {
         let myShipName = document.createElement("h2");
-        myShipName.textContent = films[j].title;
+        myShipName.textContent = films[j].name;
 
         let mySpanTag2 = document.createElement("span");
         mySpanTag2.appendChild(myShipName);

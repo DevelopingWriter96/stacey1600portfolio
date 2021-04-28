@@ -19,7 +19,7 @@ function shipLoop (){
         let mySpanTag2 = document.createElement("span");
         mySpanTag2.appendChild(myShipTitle);
 
-        document.querySelector("#moviewrapper").appendChild(mySpanTag2);
+        document.querySelector("#ships").appendChild(mySpanTag2);
     }    
 }
 

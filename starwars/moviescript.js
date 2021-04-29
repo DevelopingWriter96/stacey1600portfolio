@@ -18,7 +18,7 @@ function movieLoop (){
 
 function getLastNumber(url){
     let end = url.lastIndexOf('/')
-    let movieNum = end - 1
+    return.url.charAt(end-1)
     //console.log(movieNum)
 }
 

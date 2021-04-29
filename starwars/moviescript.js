@@ -10,7 +10,7 @@ function movieLoop (){
     for (let i = 0; i < films.length; i++) {
         console.log(`${films[i].episode_id}`)
         const foundMovie = films.find(film => getLastNumber(film.url) === (i + 1).toString())    
-        let movieItem = document.createElement('h2')
+        let movieItem = document.createElement('li')
         movieItem.textContent = foundMovie.title
         movieList.appendChild(movieItem)
     }

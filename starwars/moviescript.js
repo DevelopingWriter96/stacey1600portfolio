@@ -12,7 +12,7 @@ function movieLoop (){
         const foundMovie = films.find(film => getLastNumber(film.url) === (i + 1).toString())    
         let movieItem = document.createElement('h2')
         movieItem.textContent = foundMovie.title
-        movieWrapper
+        movieList.appendChild(movieItem)
     }
 }
 

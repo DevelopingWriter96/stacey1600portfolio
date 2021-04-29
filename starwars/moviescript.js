@@ -2,7 +2,7 @@ import { films } from './data/films.js';
 
 let force = "May the force be with you";
 
-let movieWrapper = document.querySelector('#moviewrapper')
+let movieList = document.querySelector('#moviewrapper')
 
 console.log(force);
 

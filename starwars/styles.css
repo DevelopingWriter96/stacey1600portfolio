@@ -5,3 +5,8 @@ body {
     text-align: center;
 
 }
+
+#movieList {
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -18,3 +18,7 @@ figure {
 header {
     font-size: 40px;
 }
+
+figcaption {
+    font-weight: bold;
+}

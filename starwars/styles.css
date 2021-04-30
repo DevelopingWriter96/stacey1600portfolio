@@ -14,3 +14,7 @@ figure {
     display: flex;
     flex-wrap: wrap;
 }
+
+header {
+    font-size: 30;
+}

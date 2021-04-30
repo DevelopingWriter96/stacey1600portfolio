@@ -1,4 +1,4 @@
-import { films } from './data/films.js';
+import { films } from '../data/films.js';
 
 let force = "May the force be with you";
 

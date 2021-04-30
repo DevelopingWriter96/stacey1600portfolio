@@ -1,5 +1,4 @@
-import { films } from './data/films.js';
-import { starships } from './data/starships.js'
+import { starships } from '../data/starships.js'
 
 
 

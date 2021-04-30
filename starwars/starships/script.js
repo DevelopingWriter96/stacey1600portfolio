@@ -6,10 +6,11 @@ const ships = document.querySelector('#ships')
 
 function shipLoop(starships) {
     starships.forEach(starship => {
-        let shipItem = document.createElement('li')
+        let shipFig = document.createElement('figure')
+        let shipItem = document.createElement('figcaption')
         shipItem.textContent = starship.name
 
-        ships.appendChild(shipItem)
+        ships.appendChild(shipFig)
     })
 }
 

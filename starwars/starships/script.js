@@ -4,7 +4,7 @@ console.log(starships.length)
 
 const ships = document.querySelector('ships')
 
-function shipLoop(starships){
+function shipLoop(starships) {
     starships.forEach(starship => {
         let shipItem = document.createElement('li')
         shipItem.textContent = starship.name

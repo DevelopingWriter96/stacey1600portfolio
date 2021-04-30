@@ -2,9 +2,9 @@ import { starships } from '../data/starships.js'
 
 let force = "May the force be with you";
 
-console.log(starships);
+console.log(starships.length);
 
-console.log(force.length);
+console.log(force);
 
 function shipLoop (){
     for (let j = 0; j < starships.length; j++) {

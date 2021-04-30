@@ -1,0 +1,24 @@
+body {
+    font-family: roboto;
+    color: #eee;
+    background-color: #111;
+    text-align: center;
+
+}
+
+figure {
+    max-width: 400px;
+}
+
+#moviewrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    font-size: 40px;
+}
+
+figcaption {
+    font-weight: bold;
+}

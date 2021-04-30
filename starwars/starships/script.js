@@ -9,7 +9,7 @@ function shipLoop(starships) {
         let shipFig = document.createElement('figure')
         let shipItem = document.createElement('figcaption')
         shipItem.textContent = starship.name
-
+        shipFig.appendChild(shipItem)
         ships.appendChild(shipFig)
     })
 }

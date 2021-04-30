@@ -6,6 +6,10 @@ body {
 
 }
 
+figure {
+    max-width: 400px;
+}
+
 #moviewrapper {
     display: flex;
     flex-wrap: wrap;

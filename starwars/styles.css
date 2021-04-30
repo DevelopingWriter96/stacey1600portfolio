@@ -6,7 +6,7 @@ body {
 
 }
 
-#movieList {
+#moviewrapper {
     display: flex;
     flex-wrap: wrap;
 }

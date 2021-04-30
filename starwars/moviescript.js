@@ -15,8 +15,9 @@ function movieLoop (){
         figImg.src = `https://starwars-visualguide.com/assets/img/films/7.jpg`
         let figCap = document.createElement('figcaption')
         figCap.textContent = foundMovie.title
-
-        movieList.appendChild(movieItem)
+        posterFig.appendChild(figImg)
+        posterFig.appendChild(figCap)
+        movieList.appendChild(posterFig)
     }
 }
 

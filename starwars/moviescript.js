@@ -10,8 +10,12 @@ function movieLoop (){
     for (let i = 0; i < films.length; i++) {
         console.log(`${films[i].episode_id}`)
         const foundMovie = films.find(film => getLastNumber(film.url) === (i + 1).toString())    
-        let movieItem = document.createElement('li')
-        movieItem.textContent = foundMovie.title
+        let posterFig = document.createElement('figure')
+        let figImg = document.createElement('img')
+        figImg.src = `https://starwars-visualguide.com/assets/img/films/7.jpg`
+        let figCap = document.createElement('figcaption')
+        figCap.textContent = foundMovie.title
+
         movieList.appendChild(movieItem)
     }
 }

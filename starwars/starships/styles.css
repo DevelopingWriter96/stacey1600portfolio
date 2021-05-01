@@ -10,7 +10,7 @@ figure {
     max-width: 400px;
 }
 
-#moviewrapper {
+#ships {
     display: flex;
     flex-wrap: wrap;
 }

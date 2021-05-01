@@ -2,11 +2,15 @@ body {
     font-family: roboto;
     color: #eee;
     background-color: #111;
-    /*--text-align: center;--*/
+    text-align: center;
 
 }
 
-#ships {
+figure {
+    max-width: 400px;
+}
+
+#moviewrapper {
     display: flex;
     flex-wrap: wrap;
 }

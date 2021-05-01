@@ -6,7 +6,7 @@ console.log(starships.length)
 const ships = document.querySelector('#ships')
 const shipView = document.querySelector('#shipview')
 
-function shipLoop(starships) {
+function shipLoop(shipData) {
     starships.forEach(starship => {
         let shipFig = document.createElement('figure')
         let shipItem = document.createElement('figcaption')

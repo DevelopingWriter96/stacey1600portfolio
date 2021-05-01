@@ -108,8 +108,9 @@ section {
     align-items: center;
 }
 
-#projects {
+#projects a {
     display: flex;
+    flex-wrap: wrap;
 }
 
 i {

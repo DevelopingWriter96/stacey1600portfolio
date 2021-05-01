@@ -14,4 +14,10 @@ function shipLoop(starships) {
     })
 }
 
+function populateShipView(shipData) {
+    let shipImage = document.createElement('img')
+    shipImage.src = `https://starwars-visualguide.com/assets/img/starships/9.jpg`
+    shipView.appendChild(shipImage)
+}
+
 shipLoop(starships);

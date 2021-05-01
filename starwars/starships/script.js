@@ -3,6 +3,7 @@ import { starships } from '../data/starships.js'
 console.log(starships.length)
 
 const ships = document.querySelector('#ships')
+const shipView = document.querySelector('#shipview')
 
 function shipLoop(starships) {
     starships.forEach(starship => {

@@ -1,4 +1,5 @@
 import { films } from '../data/films.js';
+import {getLastNumber} from '../utilities/script.js'
 
 let force = "May the force be with you";
 

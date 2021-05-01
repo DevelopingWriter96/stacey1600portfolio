@@ -110,7 +110,6 @@ section {
 
 #projects a {
     display: flex;
-    flex-wrap: wrap;
 }
 
 i {

@@ -1,4 +1,5 @@
 import { starships } from '../data/starships.js'
+import { getLastNumber, removeChild } from '../utilities/script.js'
 
 console.log(starships.length)
 
@@ -11,8 +12,9 @@ function shipLoop(starships) {
         let shipItem = document.createElement('figcaption')
         shipItem.textContent = starship.name
         shipFig.appendChild(shipItem)
+        let shipNum = getLastNumber(shipData.url)
         let figImg = document.createElement('img')
-        figImg.src = `https://starwars-visualguide.com/assets/img/starships/9.jpg`
+        figImg.src = `https://starwars-visualguide.com/assets/img/starships/${shipNum}.jpg`
         shipFig.appendChild(figImg)
         shipFig.appendChild(shipItem)
         ships.appendChild(shipFig)

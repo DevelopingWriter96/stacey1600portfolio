@@ -10,7 +10,7 @@ figure {
     max-width: 400px;
 }
 
-#moviewrapper {
+main {
     display: flex;
     flex-wrap: wrap;
 }

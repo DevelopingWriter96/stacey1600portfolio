@@ -13,7 +13,7 @@ function shipLoop(starships) {
         shipItem.textContent = starship.name
         shipFig.appendChild(shipItem)
         ships.appendChild(shipFig)
-        let shipNum = getLastNumber(shipship.url)
+        let shipNum = getLastNumber(starship.url)
         let figImg = document.createElement('img')
         figImg.src = `https://starwars-visualguide.com/assets/img/starships/${shipNum}.jpg`
         shipFig.appendChild(figImg)

@@ -78,7 +78,7 @@ a {
     color: white;
     font-size: 2.2rem;
     display: block;
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 .nav a:hover {
@@ -87,8 +87,8 @@ a {
 
 .navigation a {
     display: block;
-    font-size: 2.2rem;
-    padding: 2rem;
+    font-size: 1.1rem;
+    padding: 1rem;
 }
 
 figure img {

@@ -92,7 +92,7 @@ a {
 }
 
 figure img {
-    width: 20%;
+    max-height: 200px; 
 }
 
 section {

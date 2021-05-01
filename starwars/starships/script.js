@@ -11,16 +11,12 @@ function shipLoop(starships) {
         let shipItem = document.createElement('figcaption')
         shipItem.textContent = starship.name
         shipFig.appendChild(shipItem)
+        let figImg = document.createElement('img')
+        figImg.src = `https://starwars-visualguide.com/assets/img/films/${(i + 1)}.jpg`
+        shipFig.appendChild(figImg)
+        shipFig.appendChild(shipItem)
         ships.appendChild(shipFig)
     })
 }
 
-function populateShipView(shipData) {
-    let shipImage = document.createElement('img')
-    shipImage.src = `https://starwars-visualguide.com/assets/img/starships/9.jpg`
-    shipView.appendChild(shipImage)
-}
-
 shipLoop(starships);
-
-populateShipView();

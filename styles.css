@@ -108,7 +108,7 @@ section {
     align-items: center;
 }
 
-#projects a {
+#project-list {
     display: flex;
     flex-direction: row;
 }

@@ -21,3 +21,5 @@ function populateShipView(shipData) {
 }
 
 shipLoop(starships);
+
+populateShipView();

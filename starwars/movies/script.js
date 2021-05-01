@@ -21,9 +21,4 @@ function movieLoop (){
     }
 }
 
-function getLastNumber(url){
-    let end = url.lastIndexOf('/')
-    return url.charAt(end - 1)
-}
-
 movieLoop();

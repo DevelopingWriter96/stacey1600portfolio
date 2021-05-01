@@ -1,5 +1,5 @@
 import { starships } from '../data/starships.js'
-import { getLastNumber, removeChild } from '../utilities/script.js'
+import { getLastNumber } from '../utilities/script.js'
 
 console.log(starships.length)
 

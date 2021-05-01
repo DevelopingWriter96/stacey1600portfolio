@@ -16,6 +16,9 @@ function shipLoop(starships) {
         let shipNum = getLastNumber(starship.url)
         let figImg = document.createElement('img')
         figImg.src = `https://starwars-visualguide.com/assets/img/starships/${shipNum}.jpg`
+        figImg.addEventListener('error', () => {
+            figImg.src = `https://starwars-visualguide.com/assets/img/placeholder.jpg`
+        })
         shipFig.appendChild(figImg)
         shipFig.appendChild(shipItem)
     })

@@ -17,7 +17,6 @@ function shipLoop(starships) {
 }
 
 function createShipView(shipData) {
-    removeChildren(shipView)
     let shipNum = getLastNumber(shipData.url)
     let figImg = document.createElement('img')
     figImg.src = `https://starwars-visualguide.com/assets/img/starships/${shipNum}.jpg`

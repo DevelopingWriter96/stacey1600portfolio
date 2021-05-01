@@ -108,6 +108,11 @@ section {
     align-items: center;
 }
 
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 i {
     font-size: 5rem;
 }

@@ -6,10 +6,6 @@ body {
 
 }
 
-figure {
-    max-width: 400px;
-}
-
 #ships {
     display: flex;
     flex-wrap: wrap;

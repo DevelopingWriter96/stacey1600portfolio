@@ -30,7 +30,7 @@ button {
     width: 200px;
     height: 260px;
     margin: 10px;
-    color: #fff;
+    color: #000;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -60,7 +60,7 @@ button {
   }
 
   .card__face--front {
-    background: red;
+    background: white;
     border-radius: 15px;
   }
   

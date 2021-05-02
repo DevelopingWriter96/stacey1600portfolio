@@ -102,6 +102,7 @@ function fillCardBack(pokemon) {
     pokemon.types.forEach((pokeType) => {
     let backType = document.createElement('p')
     backType.textContent = pokeType.type.name
+    backType.className = 'type'
     pokeBack.appendChild(backType)
     })
     let backSprite = document.createElement('img')

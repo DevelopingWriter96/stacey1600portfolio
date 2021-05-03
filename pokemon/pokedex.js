@@ -84,7 +84,7 @@ function fillCardFront(pokemon) {
 
     let pokeFrontType = pokemon.types[0].type.name
     console.log(pokeFrontType)
-    frontType.getFrontTypeColor(pokeFrontType)
+    //frontType.getFrontTypeColor(pokeFrontType)
 
     pokemon.types.forEach((pokeType) => {
         let frontType = document.createElement('p')

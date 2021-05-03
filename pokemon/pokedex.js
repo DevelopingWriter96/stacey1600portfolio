@@ -82,7 +82,7 @@ function fillCardFront(pokemon) {
     pokeFront.appendChild(frontLabel)
     pokeFront.appendChild(frontImage)
 
-    let pokeFrontType = pokemon.types(0).name
+    let pokeFrontType = pokemon.types[0].type.name
     console.log(pokeFrontType)
 
     pokemon.types.forEach((pokeType) => {

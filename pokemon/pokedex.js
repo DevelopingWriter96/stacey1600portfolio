@@ -89,7 +89,6 @@ function fillCardFront(pokemon) {
     pokemon.types.forEach((pokeType) => {
         let frontType = document.createElement('p')
         frontType.textContent = pokeType.type.name
-        frontType.className = 'type'
         pokeFront.appendChild(frontType)
         })
     return pokeFront
@@ -108,7 +107,6 @@ function fillCardBack(pokemon) {
     let backType = document.createElement('p')
     backType.textContent = pokeType.type.name
     //getPokemonType(backType.type.name)
-    backType.className = 'type'
     pokeBack.appendChild(backType)
     })
     let backSprite = document.createElement('img')

@@ -4,7 +4,7 @@ const addButton = document.querySelector('#addPoke')
 
 class Pokemon {
     constructor(name, height, weight,types) {
-        this.id = 000;
+        this.id = 900;
         this.name = name;
       this.height = height;
       this.weight = weight;
@@ -45,7 +45,7 @@ async function getAPIData(url) {
 }
 
 function loadPage() {
-    getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=151`).then(
+    getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=493`).then(
         async (data) => {
             for (const singlePokemon of data.results) {
                 await getAPIData(singlePokemon.url).then(

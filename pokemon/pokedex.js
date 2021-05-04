@@ -1,5 +1,8 @@
 const pokeGrid = document.querySelector('.pokeGrid')
-const loadPoke = document.querySelector('.loadPoke')
+const loadPoke1 = document.querySelector('.loadPoke1')
+const loadPoke2 = document.querySelector('.loadPoke2')
+const loadPoke3 = document.querySelector('.loadPoke3')
+const loadPoke4 = document.querySelector('.loadPoke4')
 const addButton = document.querySelector('#addPoke')
 
 class Pokemon {
@@ -30,8 +33,20 @@ addButton.addEventListener('click', () => {
     console.log(customPoke)
 })  
 
-loadPoke.addEventListener('click', () => {
-    loadPage()
+loadPoke1.addEventListener('click', () => {
+    loadPage1()
+})
+
+loadPoke2.addEventListener('click', () => {
+    loadPage2()
+})
+
+loadPoke3.addEventListener('click', () => {
+    loadPage3()
+})
+
+loadPoke4.addEventListener('click', () => {
+    loadPage4()
 })
 
 async function getAPIData(url) {
@@ -44,8 +59,47 @@ async function getAPIData(url) {
     }
 }
 
-function loadPage() {
+function loadPage1() {
     getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=151`).then(
+        async (data) => {
+            for (const singlePokemon of data.results) {
+                await getAPIData(singlePokemon.url).then(
+                    (pokeData) => fillPokeCard(pokeData)
+                )
+
+            } 
+        }
+    )
+}
+
+function loadPage2() {
+    getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=100&offset=151`).then(
+        async (data) => {
+            for (const singlePokemon of data.results) {
+                await getAPIData(singlePokemon.url).then(
+                    (pokeData) => fillPokeCard(pokeData)
+                )
+
+            } 
+        }
+    )
+}
+
+function loadPage3() {
+    getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=135&offset=251`).then(
+        async (data) => {
+            for (const singlePokemon of data.results) {
+                await getAPIData(singlePokemon.url).then(
+                    (pokeData) => fillPokeCard(pokeData)
+                )
+
+            } 
+        }
+    )
+}
+
+function loadPage4() {
+    getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=107&offset=386`).then(
         async (data) => {
             for (const singlePokemon of data.results) {
                 await getAPIData(singlePokemon.url).then(

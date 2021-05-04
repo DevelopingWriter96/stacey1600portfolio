@@ -90,7 +90,7 @@ function fillCardFront(pokemon) {
         let frontType = document.createElement('p')
         frontType.textContent = pokeType.type.name
         pokeFront.appendChild(frontType)
-        frontType.className = 'type'
+        frontType.className = 'fire'
         })
     return pokeFront
 }
@@ -109,6 +109,7 @@ function fillCardBack(pokemon) {
     backType.textContent = pokeType.type.name
     //getPokemonType(backType.type.name)
     pokeBack.appendChild(backType)
+    backType.className = 'fire'
     })
     let backSprite = document.createElement('img')
     backSprite.src = `images/${getImageFileName(pokemon)}MS.png`

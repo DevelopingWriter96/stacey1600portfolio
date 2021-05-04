@@ -82,15 +82,12 @@ function fillCardFront(pokemon) {
     pokeFront.appendChild(frontLabel)
     pokeFront.appendChild(frontImage)
 
-    let pokeFrontType = pokemon.types[0].type.name
-    console.log(pokeFrontType)
-    //frontType.getFrontTypeColor(pokeFrontType)
-
     pokemon.types.forEach((pokeType) => {
         let frontType = document.createElement('p')
         frontType.textContent = pokeType.type.name
         pokeFront.appendChild(frontType)
-        frontType.className = 'fire'
+        let pokeFrontType = pokemon.types[0].type.name
+        frontType.classList.add(pokeFrontType)
         })
     return pokeFront
 }
@@ -107,9 +104,9 @@ function fillCardBack(pokemon) {
     pokemon.types.forEach((pokeType) => {
     let backType = document.createElement('p')
     backType.textContent = pokeType.type.name
-    //getPokemonType(backType.type.name)
     pokeBack.appendChild(backType)
-    backType.className = 'fire'
+    let pokeBackType = pokemon.types[0].type.name
+    backType.classList.add(pokeBackType)
     })
     let backSprite = document.createElement('img')
     backSprite.src = `images/${getImageFileName(pokemon)}MS.png`

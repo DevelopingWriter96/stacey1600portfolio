@@ -86,7 +86,7 @@ function fillCardFront(pokemon) {
         let frontType = document.createElement('p')
         frontType.textContent = pokeType.type.name
         pokeFront.appendChild(frontType)
-        let pokeFrontType = pokemon.types[0].type.name
+        let pokeFrontType = pokeType.type.name
         frontType.classList.add(pokeFrontType)
         })
     return pokeFront
@@ -105,7 +105,7 @@ function fillCardBack(pokemon) {
     let backType = document.createElement('p')
     backType.textContent = pokeType.type.name
     pokeBack.appendChild(backType)
-    let pokeBackType = pokemon.types[0].type.name
+    let pokeBackType = pokeType.type.name
     backType.classList.add(pokeBackType)
     })
     let backSprite = document.createElement('img')
@@ -128,4 +128,11 @@ function getImageFileName(pokemon) {
     } else {
         return `${pokemon.id}`
     }    
+}
+
+function getPokeTypeColor(pokeType) {
+    switch(pokeType) {
+        case 'grass':
+
+    }
 }

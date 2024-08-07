@@ -63,7 +63,7 @@ function loadPage1() {
     getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=151`).then(
         async (data) => {
             for (const singlePokemon of data.results) {
-                await getAPIData(singlePokemon.url).then(
+                getAPIData(singlePokemon.url).then(
                     (pokeData) => fillPokeCard(pokeData)
                 )
 
@@ -76,7 +76,7 @@ function loadPage2() {
     getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=100&offset=151`).then(
         async (data) => {
             for (const singlePokemon of data.results) {
-                await getAPIData(singlePokemon.url).then(
+                getAPIData(singlePokemon.url).then(
                     (pokeData) => fillPokeCard(pokeData)
                 )
 
@@ -89,7 +89,7 @@ function loadPage3() {
     getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=135&offset=251`).then(
         async (data) => {
             for (const singlePokemon of data.results) {
-                await getAPIData(singlePokemon.url).then(
+                getAPIData(singlePokemon.url).then(
                     (pokeData) => fillPokeCard(pokeData)
                 )
 
@@ -102,7 +102,7 @@ function loadPage4() {
     getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=107&offset=386`).then(
         async (data) => {
             for (const singlePokemon of data.results) {
-                await getAPIData(singlePokemon.url).then(
+                getAPIData(singlePokemon.url).then(
                     (pokeData) => fillPokeCard(pokeData)
                 )
 

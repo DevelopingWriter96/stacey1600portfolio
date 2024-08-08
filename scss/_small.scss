@@ -1,0 +1,118 @@
+html {
+    font-family: roboto;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 75em) {
+    html {
+        font-size: 58%;
+    }
+}
+
+@media (max-width: 61.25em) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 28.75em) {
+    .nav {
+        justify-content: center;
+    }
+
+    .navigation {
+        margin: 0 1 rem;
+    }
+}
+
+body {
+    font-size: 1.8rem;
+    align-items: center;
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4.2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    text-align: left;
+    align-items: left;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: green;
+    z-index: 10;
+
+}
+
+.navigation {
+    display: flex;
+    margin-right: 2rem;
+}
+
+.nav a {
+    color: white;
+    font-size: 2.2rem;
+    display: block;
+    padding: 2rem;
+}
+
+.nav a:hover {
+    background: #00ff00;
+}
+
+.navigation a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+}
+
+figure img {
+    max-height: 200px; 
+}
+
+section {
+    width: 100%;
+    height: 120vh;
+    align-items: center;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#project-list {
+    display: flex;
+    flex-direction: row;
+}
+
+i {
+    font-size: 5rem;
+}
